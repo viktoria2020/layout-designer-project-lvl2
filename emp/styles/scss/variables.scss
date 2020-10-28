@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2? family = Roboto & display = swap');
+
+$font1: 'Roboto', sans-serif;
+$light: #FFF, #34C176;
+$dark: #08020D;
+$dark-for-search:#3C3B3D; 
+$inert:#808080; 
+
+
+%grid-12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+
+@mixin absolute($number) {
+    .absolute-#{$number}{
+    position: absolute;
+    top: #{$number}px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    }
+}
+@include absolute(25);
+@include absolute(493);
+@include absolute(272);
+
+@mixin text($size) {
+    .fs-#{$size}{
+        font-size: #{$size}px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+@include text(11);
+@include text(60);
+@include text(30);
+@include text(14);
+@include text(18);
+

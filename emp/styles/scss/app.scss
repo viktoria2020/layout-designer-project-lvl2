@@ -1,0 +1,123 @@
+@import "variables";
+
+body{
+    background-color: $dark;
+    color: nth($light, 1);
+    font-family:  $font1;
+    background-color: greenyellow;
+}
+.header{
+    height: 30px;
+    width: 1200px;
+
+    @extend%grid-12;
+    .col-1{
+        grid-column: span 1;
+    }
+    .col-3{
+        grid-column: 10/span 3;
+    }
+    .col-4{
+        grid-column: 3/span 4;
+    }
+}
+
+.box{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+
+    &.fl-start{
+    justify-content: flex-start;
+    }
+    &.fl-sp-betw{
+    justify-content: space-between;
+    } 
+    &.fl-end{
+    justify-content: flex-end;
+    }
+}
+
+.logo-size{
+    width: 19.76px;
+    height: 17px;
+}
+.mar-3{
+    margin: 3px 0 0 3px;
+}
+.style{
+    list-style: none;
+}
+.inert{
+    color: $inert;
+}
+
+.search{
+    width: 278px;
+    height: 20px;
+    border-radius: 50px;
+    padding-left: 13.9px;
+
+    background-color: $dark-for-search;
+    color: $inert;
+    border: none;
+}
+
+.bg-image{
+    background-image: url(../images/banner.png);
+    background-color: $dark;
+    background-size: cover;
+}
+.h-877{
+    height: 877px;
+}
+.absolute-0{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.text-center{
+    text-align: center;
+}
+.w-100{
+    width: 100%;
+}
+.no-upper{
+    text-transform: none;
+}
+.mar-0{
+    margin: 0;
+}
+.mar-10-45{
+    margin: 10px 0 45px 0;
+}
+
+.form-size{
+    width: 570px;
+    height: 136px;
+}
+
+.form-box-size{
+    width: 262px;
+    height: 44px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: nth($light, 1);
+}
+.mar-t-30{
+    margin-top: 30px;
+}
+.btn-green{
+    width: 570px;
+    height: 56px;
+    background-color: nth($light, 2);
+    border-radius: 5px;
+    color: nth($light, 1);
+}
