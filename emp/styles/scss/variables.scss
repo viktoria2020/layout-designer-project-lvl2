@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2? family = Roboto & display = swap');
 
 $font1: 'Roboto', sans-serif;
-$light: #FFF, #34C176;
+$light: #FFF, #34C176, #F89202,  #E9E9E9, #FF4157;
 $dark: #08020D;
 $dark-for-search:#3C3B3D; 
-$inert:#808080; 
+$inert:#808080, #8C8C8C, #555555,#B8B8B8; 
 
 
 %grid-12{
@@ -27,6 +27,10 @@ $inert:#808080;
 @include absolute(25);
 @include absolute(493);
 @include absolute(272);
+@include absolute(977);
+@include absolute(1856);
+@include absolute(2689);
+
 
 @mixin text($size) {
     .fs-#{$size}{
@@ -40,4 +44,20 @@ $inert:#808080;
 @include text(30);
 @include text(14);
 @include text(18);
+@include text(38);
+@include text(22);
+@include text(12);
+@include text(24);
+@include text(16);
+
+@for $i from 1 through 3{
+    $numeric: $i;
+    .sub-#{$numeric}{
+        background-image: url(../images/subscribe_#{$numeric}.png);
+        background-color: $dark;
+        background-size: cover;
+    }
+}
+
+
 
