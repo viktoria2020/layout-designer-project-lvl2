@@ -8,27 +8,27 @@
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body> 
+<body class="mar-0"> 
     <header class="header absolute-25 fs-11 box">
         <div class="flex fl-start col-1">
             <img src="images/logo.svg" alt="Логотип" class="logo-size">
             <p class="mar-3">MUSIC BOX</p>
         </div>
         <nav class="col-4">
-            <ul class="flex fl-sp-betw style mar-3">
+            <ul class="flex fl-sp-betw no-style mar-3">
                 <li <a href="#advantages">ГЛАВНАЯ</a></li>
-                <li class="inert" <a href="#">КАТАЛОГ</a></li>
-                <li class="inert" <a href="#">ИСПОЛНИТЕЛИ</a></li>
-                <li class="inert" <a href="#">КОНТАКТЫ</a></li>
+                <li <a href="#">КАТАЛОГ</a></li>
+                <li <a href="#">ИСПОЛНИТЕЛИ</a></li>
+                <li <a href="#">КОНТАКТЫ</a></li>
             </ul>
         </nav>
         <form class="col-3 flex fl-end">
-            <input type="text" placeholder="ПОИСК.." class="search fs-11">
+            <input type="text" placeholder="ПОИСК.." class="search-size search-decor fs-11">
         </form>
     </header>
     <main> 
         <section class="bg-image absolute-0 h-877 box">
-            
+    
                 <div class="text-center absolute-272 w-100">
                     <h1 class="fs-60 mar-0">ОНЛАЙН МУЗЫКА ГДЕ УГОДНО</h1>
                     <p class="fs-30 mar-10-45">БЕЗ ОГРАНИЧЕНИЙ</p>
@@ -38,10 +38,10 @@
                 <form class="form-size absolute-493">
                     <div class="flex fl-sp-betw">
                         <div class="mar-r-30">
-                            <input type="text" placeholder="Имя" class="form-box-size fs-14 no-upper">
+                            <input type="text" placeholder="Имя" class="form-box-decor box fs-14 no-upper">
                         </div>
                         <div>
-                            <input type="text" placeholder="Email" class="form-box-size fs-14 no-upper">
+                            <input type="text" placeholder="Email" class="form-box-decor box fs-14 no-upper">
                         </div>
                     </div>
                         
@@ -49,8 +49,116 @@
                         <button class="btn-green fs-14">ПОЛУЧИТЬ ДОСТУП</button>
                     </div>
                 </form>
-                
-            
+        </section>
+
+        <section class="absolute-977 subscription text-center flex fl-column fl-sp-betw">
+            <p class="fs-38">Формы подписки</p>
+           
+            <div class="flex fl-sp-betw">
+
+                <div class="sub-box sub-1 box flex fl-column">
+                    <p class="fs-24 font-norm mar-24i">Бесплатная</p>
+                    <div class="mar-t-222i flex self-center">
+                        <p class="fs-60 font-norm p-price">0</p>
+                        <p class="fs-30 font-norm p-rub">руб.</p>
+                    </div>
+                    <div class="mar-arrange btn-arrange box">
+                        <p class="fs-24 font-norm mar-20-83">оформить</p>
+                    </div>
+                    <p class="fs-11 no-upper font-norm mar-0-25">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+                </div>
+
+                <div class="sub-box sub-2 box flex fl-column">
+                    <p class="fs-24 font-norm mar-24">Стандартная</p>
+                    <div class="mar-t-223 flex self-center">
+                        <p class="fs-60 font-norm p-price">250</p>
+                        <p class="fs-30 font-norm p-rub">руб.</p>
+                    </div>
+                    <div class="mar-arrange btn-arrange box">
+                        <p class="fs-24 font-norm mar-20-83">оформить</p>
+                    </div>
+                    <p class="fs-11 no-upper font-norm mar-0-25">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+                </div>
+
+                <div class="sub-box sub-3 box flex fl-column">
+                    <p class="fs-24 font-norm mar-24">Премиум</p>
+                    <div class="mar-t-223 flex self-center">
+                        <p class="fs-60 font-norm p-price">500</p>
+                        <p class="fs-30 font-norm p-rub">руб.</p>
+                    </div>
+                    <div class="mar-arrange btn-arrange box">
+                        <p class="fs-24 font-norm mar-20-83">оформить</p>
+                    </div>
+                    <div class="self-center">
+                        <p class="fs-11 no-upper font-norm mar-0-25">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+                    </div>
+                </div>
+            </div>
+            <p class="fs-22 no-upper font-norm mar-0-25">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+        </section>
+
+        <section class="news absolute-1856">
+            <p class="fs-38 text-center mar-0">Последние новости</p>
+
+            <div class="h-284 mar-t-50 flex fl-sp-betw fl-row-reverse">
+                <div>
+                    <div class="h-116">
+                        <p class="fs-30 no-upper font-norm mar-20">Music to Be Murdered By</p>
+                        <p class="fs-14 no-upper font-norm new-color mar-t-25">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе.</p>
+                        <p class="fs-14 no-upper font-norm new-color">На альбоме вас ждёт 20 новых треков.</p>
+                    </div>
+                    <div class="ava-box-size flex fl-sp-betw mar-t-16">
+                        <img src="images/avatar.png" alt="Аватар автора" class="ava-size pad-t-4">
+                        <p class="fs-12 font-norm ava-color mar-t-8">Music box</p>
+                        <div class="line mar-t-9"></div>
+                        <p class="fs-12 font-norm new-date mar-t-8">17/01/2020</p>
+                    </div>
+                    <form class="mar-t-45">
+                        <button class="album fs-12">К альбому</button>
+                    </form>
+                </div>
+                <div class="news-picture-box picture-1"></div>
+            </div>
+
+            <div class="h-284 borders flex fl-sp-betw mar-t-70">
+                <div>
+                    <div class="h-116">
+                        <p class="fs-30 no-upper font-norm mar-0">Ordinary Man</p>
+                        <p class="fs-14 no-upper font-norm new-color mar-t-25">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man.</p>
+                        <p class="fs-14 no-upper font-norm new-color">Слушайте в числе первых на Music Box</p>
+                    </div>
+                    <div class="ava-box-size flex fl-sp-betw mar-t-15">
+                        <img src="images/avatar.png" alt="Аватар автора" class="ava-size pad-t-4">
+                        <p class="fs-12 font-norm ava-color mar-t-8">Music box</p>
+                        <div class="line mar-t-9"></div>
+                        <p class="fs-12 font-norm new-date mar-t-8">24/02/2020</p>
+                    </div>
+                    <form class="mar-t-45">
+                        <button class="album fs-12">К альбому</button>
+                    </form>
+                </div>
+                <div class="news-picture-box picture-2"></div>
+            </div>
+        </section>
+
+        <section class="mobil absolute-2689">
+            <p class="fs-38 text-center mar-0">Мобильное приложение</p>
+
+            <div class="flex">
+                <div>
+                    <div class="mobil-text mar-t-82">
+                        <p class="fs-16 no-upper font-norm">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
+                        <p class="fs-16 no-upper font-norm mar-t-25">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+                    </div>
+                   
+                    <form class="mar-t-25">
+                        <button class="btn-red fs-14 no-upper font-norm text-center">Скачать</button>
+                    </form>
+                </div>
+
+                <div class="mobil-picture"></div>
+            </div>
+
         </section>
     </main>
     <footer> </footer>

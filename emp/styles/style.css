@@ -28,6 +28,30 @@
   z-index: 100;
 }
 
+.absolute-977 {
+  position: absolute;
+  top: 977px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.absolute-1856 {
+  position: absolute;
+  top: 1856px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.absolute-2689 {
+  position: absolute;
+  top: 2689px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
 .fs-11 {
   font-size: 11px;
   font-weight: bold;
@@ -58,11 +82,60 @@
   text-transform: uppercase;
 }
 
+.fs-38 {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fs-22 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fs-12 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fs-24 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.fs-16 {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sub-1 {
+  background-image: url(../images/subscribe_1.png);
+  background-color: #08020D;
+  background-size: cover;
+}
+
+.sub-2 {
+  background-image: url(../images/subscribe_2.png);
+  background-color: #08020D;
+  background-size: cover;
+}
+
+.sub-3 {
+  background-image: url(../images/subscribe_3.png);
+  background-color: #08020D;
+  background-size: cover;
+}
+
 body {
   background-color: #08020D;
   color: #FFF;
   font-family: "Roboto", sans-serif;
-  background-color: greenyellow;
+  position: relative;
+  background-color: khaki;
 }
 
 .header {
@@ -77,6 +150,12 @@ body {
 }
 .header .col-4 {
   grid-column: 3/span 4;
+}
+.header li {
+  color: #808080;
+}
+.header li:hover {
+  color: #FFF;
 }
 
 .box {
@@ -95,6 +174,15 @@ body {
 .flex.fl-end {
   justify-content: flex-end;
 }
+.flex.fl-column {
+  flex-direction: column;
+}
+.flex.self-center {
+  align-self: center;
+}
+.flex.fl-row-reverse {
+  flex-direction: row-reverse;
+}
 
 .logo-size {
   width: 19.76px;
@@ -105,22 +193,28 @@ body {
   margin: 3px 0 0 3px;
 }
 
-.style {
+.no-style {
   list-style: none;
 }
 
-.inert {
-  color: #808080;
-}
-
-.search {
+.search-size {
   width: 278px;
   height: 20px;
+}
+
+.search-decor {
   border-radius: 50px;
   padding-left: 13.9px;
-  background-color: #3C3B3D;
-  color: #808080;
   border: none;
+  background-color: #3C3B3D;
+  color: #808080, #8C8C8C, #555555, #B8B8B8;
+}
+.search-decor:hover {
+  color: #FFF;
+  border: none;
+}
+.search-decor:active {
+  color: #FFF;
 }
 
 .bg-image {
@@ -166,15 +260,13 @@ body {
   height: 136px;
 }
 
-.form-box-size {
+.form-box-decor {
   width: 262px;
   height: 44px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
-  box-sizing: border-box;
-  color: #FFF;
+  border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .mar-t-30 {
@@ -185,8 +277,226 @@ body {
   width: 570px;
   height: 56px;
   background-color: #34C176;
-  border-radius: 5px;
   color: #FFF;
+  border-radius: 5px;
+}
+
+.subscription {
+  width: 1200px;
+  height: 779px;
+  background-color: hotpink;
+}
+
+.font-norm {
+  font-weight: normal;
+}
+
+.sub-box {
+  width: 30%;
+  height: 580px;
+  border-radius: 5px;
+}
+.sub-box:hover {
+  border: 4px solid #FFFFFF;
+}
+
+.mar-24i {
+  margin: 24.91px 0 0 0;
+}
+
+.mar-24 {
+  margin: 24px 0 0 0;
+}
+
+.mar-t-222i {
+  margin-top: 222.23px;
+}
+
+.mar-t-223 {
+  margin-top: 223px;
+}
+
+.p-price {
+  margin: 0 10px 0 0;
+}
+
+.p-rub {
+  margin-top: 7px;
+}
+
+.mar-arrange {
+  margin: 40px 25px 37px 25px;
+}
+
+.btn-arrange {
+  width: 300px;
+  height: 68px;
+  border: 4px solid #FFFFFF;
+  border-radius: 5px;
+  background: transparent;
+  color: #FFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.mar-20-83 {
+  margin: 16px 83px;
+}
+
+.mar-0-25 {
+  margin: 0 25px;
+}
+
+.news {
+  width: 1200px;
+  height: 733px;
+  background: lightskyblue;
+}
+
+.h-284 {
+  height: 284px;
+}
+
+.borders {
+  border: 1px;
+  border-color: #B8B8B8;
+}
+
+.w-566 {
+  width: 566px;
+}
+
+.new-color {
+  color: #8C8C8C;
+}
+
+.mar-t-50 {
+  margin-top: 50px;
+}
+
+.h-116 {
+  height: 116px;
+}
+
+.ava-box-size {
+  height: 28px;
+  width: 221px;
+}
+
+.mar-20 {
+  margin-top: 20px;
+}
+
+.mar-t-25 {
+  margin-top: 25px;
+}
+
+.mar-t-16 {
+  margin-top: 16px;
+}
+
+.mar-t-45 {
+  margin-top: 45px;
+}
+
+.ava-size {
+  width: 20.38px;
+  height: 19px;
+}
+
+.pad-t-4 {
+  padding-top: 4px;
+}
+
+.mar-t-8 {
+  margin-top: 8px;
+}
+
+.ava-color {
+  color: #F89202;
+}
+
+.mar-t-9 {
+  margin-top: 13px;
+}
+
+.line {
+  width: 11px;
+  height: 0;
+  border: 1px solid;
+  transform: rotate(90deg);
+  border-color: #B8B8B8;
+}
+
+.new-date {
+  color: #555555;
+}
+
+.album {
+  width: 129.14px;
+  height: 48px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #E9E9E9;
+  color: #8C8C8C;
+  background: transparent;
+}
+
+.news-picture-box {
+  width: 566px;
+  height: 284px;
+}
+
+.picture-1 {
+  float: left;
+  margin-right: 68px;
+  background-image: url(../images/Music_to_Be_Murdered_By.png);
+}
+
+.picture-2 {
+  float: right;
+  margin-left: 68px;
+  background-image: url(../images/Ordinary_Man.png);
+}
+
+.mar-t-70 {
+  margin-top: 70px;
+}
+
+.mar-t-15 {
+  margin-top: 15px;
+}
+
+.mobil {
+  width: 1200px;
+  height: 322px;
+  background: olive;
+}
+
+.mobil-picture {
+  width: 295.03px;
+  height: 227px;
+  float: right;
+  margin: 50px 129.14px 0 209.6px;
+  background-image: url(../images/iphone.png);
+  background-size: cover;
+}
+
+.btn-red {
+  width: 173.76px;
+  height: 56px;
+  background: #FF4157;
+  color: #FFF;
+  border-radius: 50px;
+  border: none;
+}
+
+.mobil-text {
+  width: 566.23px;
+  color: #8C8C8C;
+}
+
+.mar-t-82 {
+  margin-top: 82px;
 }
 
 /*# sourceMappingURL=style.css.map */
