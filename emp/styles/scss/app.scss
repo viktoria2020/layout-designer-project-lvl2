@@ -1,12 +1,16 @@
 @import "variables";
 
 body{
-    background-color: $dark;
+    background-color: nth($dark, 1);
     color: nth($light, 1);
     font-family:  $font1;
     position: relative;
     
     background-color: khaki;
+
+    p{
+        margin: 0;
+    }
 }
 .header{
     height: 30px;
@@ -27,7 +31,6 @@ body{
         &:hover{
             color: nth($light, 1);
         }
-
     }  
 }
 
@@ -69,7 +72,6 @@ body{
     list-style: none;
 }
 
-
 .search-size{
     width: 278px;
     height: 20px;
@@ -79,21 +81,21 @@ body{
     padding-left: 13.9px;
     border: none;
 
-    background-color: $dark-for-search;
-    color: $inert;
+    background-color: nth($dark, 2);
+    color: nth($inert, 1);
 
     &:hover{
-        color: nth($light, 1);
+        border-radius: 50px;
+        padding-left: 13.9px;
         border: none;
-    }
-    &:active{
+
         color: nth($light, 1);
     }
 }
 
 .bg-image{
     background-image: url(../images/banner.png);
-    background-color: $dark;
+    background-color: nth($dark, 1);
     background-size: cover;
 }
 .h-877{
@@ -144,7 +146,7 @@ body{
     width: 570px;
     height: 56px;
 
-    background-color: nth($light, 2);
+    background-color: nth($multicolored, 1);
     color: nth($light, 1);
 
     border-radius: 5px;
@@ -152,6 +154,7 @@ body{
 .subscription{
     width: 1200px;
     height: 779px;
+
     background-color: hotpink;
 }
 .font-norm{
@@ -161,17 +164,13 @@ body{
     width: 30%;
     height: 580px;
 
-    border-radius: 5px;
-
-    &:hover{
-        border: 4px solid #FFFFFF;
-    } 
+    border-radius: 5px; 
 }
-.mar-24i{
-    margin: 24.91px 0 0 0;
+.mar-t-24i{
+    margin-top: 24.91px;
 }
 .mar-24{
-    margin: 24px 0 0 0;
+    margin-top: 24px;
 }
 .mar-t-222i{
     margin-top: 222.23px;
@@ -179,10 +178,10 @@ body{
 .mar-t-223{
     margin-top: 223px;
 }
-.p-price{
-    margin: 0 10px 0 0;
+.mar-r-10{
+    margin-right: 10px;
 }
-.p-rub{
+.mar-t-7{
     margin-top: 7px;
 }
 .mar-arrange{
@@ -192,7 +191,8 @@ body{
     width: 300px;
     height: 68px;
 
-    border: 4px solid #FFFFFF;
+    border: 4px solid;
+    border-color: nth($light, 1);
     border-radius: 5px;
 
     background: transparent;
@@ -216,7 +216,7 @@ body{
 }
 .borders{
     border: 1px;
-    border-color: nth($inert, 4);
+    border-color: nth($inert, 3);
 }
 .w-566{
     width: 566px;
@@ -234,7 +234,7 @@ body{
     height: 28px;
     width: 221px;
 }
-.mar-20{
+.mar-t-20{
     margin-top: 20px;
 }
 .mar-t-25{
@@ -258,7 +258,7 @@ body{
     margin-top: 8px;
 }
 .ava-color{
-    color: nth($light, 3);
+    color: nth($multicolored, 2);
 }
 .mar-t-9{
     margin-top: 13px;
@@ -270,10 +270,10 @@ body{
     border: 1px solid;
     transform: rotate(90deg);
 
-    border-color: nth($inert, 4);
+    border-color: nth($inert, 3);
 }
 .new-date{
-    color: nth($inert, 3);
+    color: nth($dark, 3);
 }
 .album{
     width: 129.14px;
@@ -281,7 +281,8 @@ body{
 
     border: 1px solid;
     border-radius: 5px;
-    border-color: nth($light, 4);
+    border-color: nth($light, 2);
+
     color: nth($inert, 2);
     background: transparent;
 }
@@ -292,11 +293,13 @@ body{
 .picture-1{
     float: left;
     margin-right: 68px;
+
     background-image: url(../images/Music_to_Be_Murdered_By.png);
 }
 .picture-2{
     float: right;
     margin-left: 68px;
+
     background-image: url(../images/Ordinary_Man.png);
 }
 .mar-t-70{
@@ -317,7 +320,9 @@ body{
     height: 227px;
 
     float: right;
+
     margin: 50px 129.14px 0 209.6px;
+
     background-image: url(../images/iphone.png);
     background-size: cover;
 }
@@ -325,7 +330,7 @@ body{
     width: 173.76px;
     height: 56px;
 
-    background: nth($light, 5);
+    background: nth($multicolored, 3);
     color: nth($light, 1);
 
     border-radius: 50px;
@@ -338,4 +343,73 @@ body{
 }
 .mar-t-82{
     margin-top: 82px;
+}
+footer{
+    height: 486px;
+    width: 100%;
+
+    background: linear-gradient(89.75deg, #5328A1 32.83%, #95390C 81.56%);
+}
+.mar-t-80{
+    margin-top: 80px;
+}
+.menu-1{
+    width: 1020px;
+    height: 187px;
+
+    margin-left: 230px;
+}
+
+.text-footer{
+    color:nth($inert, 4);
+    text-decoration: none;
+}
+
+.google{
+    width: 26px;
+    height: 17px;
+
+    background-image: url(../images/Google+.png);
+    background-size: cover;
+}
+.twit{
+    width: 22px;
+    height: 19px;
+
+    background-image: url(../images/Twitter.png);
+    background-size: cover;
+}
+.fb{
+    width: 12px;
+    height: 20px;
+
+    background-image: url(../images/Facebook.png);
+    background-size: cover;
+}
+.insta{
+    width: 19px;
+    height: 20px;
+
+    background-image: url(../images/Instagram.png);
+    background-size: cover;
+}
+.social-box{
+    width: 147px;
+    height: 71px;
+}
+.line-2{
+    width: 100%;
+    height: 0px;
+
+    margin-top: 100px;
+
+    border: 1px solid;
+    border-color: nth($light, 3);
+}
+.mar-t-50{
+    margin-top: 50px;
+}
+.menu-2{
+    width: 534px;
+    margin-left: 230px;
 }

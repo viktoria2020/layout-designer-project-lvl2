@@ -2,18 +2,16 @@
 @import url('https://fonts.googleapis.com/css2? family = Roboto & display = swap');
 
 $font1: 'Roboto', sans-serif;
-$light: #FFF, #34C176, #F89202,  #E9E9E9, #FF4157;
-$dark: #08020D;
-$dark-for-search:#3C3B3D; 
-$inert:#808080, #8C8C8C, #555555,#B8B8B8; 
 
+$light: #FFF, #E9E9E9, #EEEEEE;
+$dark: #08020D, #3C3B3D, #555555;
+$inert:#808080, #8C8C8C, #B8B8B8, #CACACA; 
+$multicolored: #34C176, #F89202, #FF4157;
 
 %grid-12{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-
-
 
 @mixin absolute($number) {
     .absolute-#{$number}{
@@ -30,6 +28,7 @@ $inert:#808080, #8C8C8C, #555555,#B8B8B8;
 @include absolute(977);
 @include absolute(1856);
 @include absolute(2689);
+@include absolute(3111);
 
 
 @mixin text($size) {

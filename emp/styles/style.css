@@ -52,6 +52,14 @@
   z-index: 100;
 }
 
+.absolute-3111 {
+  position: absolute;
+  top: 3111px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
 .fs-11 {
   font-size: 11px;
   font-weight: bold;
@@ -114,19 +122,19 @@
 
 .sub-1 {
   background-image: url(../images/subscribe_1.png);
-  background-color: #08020D;
+  background-color: #08020D, #3C3B3D, #555555;
   background-size: cover;
 }
 
 .sub-2 {
   background-image: url(../images/subscribe_2.png);
-  background-color: #08020D;
+  background-color: #08020D, #3C3B3D, #555555;
   background-size: cover;
 }
 
 .sub-3 {
   background-image: url(../images/subscribe_3.png);
-  background-color: #08020D;
+  background-color: #08020D, #3C3B3D, #555555;
   background-size: cover;
 }
 
@@ -136,6 +144,9 @@ body {
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: khaki;
+}
+body p {
+  margin: 0;
 }
 
 .header {
@@ -207,13 +218,12 @@ body {
   padding-left: 13.9px;
   border: none;
   background-color: #3C3B3D;
-  color: #808080, #8C8C8C, #555555, #B8B8B8;
+  color: #808080;
 }
 .search-decor:hover {
-  color: #FFF;
+  border-radius: 50px;
+  padding-left: 13.9px;
   border: none;
-}
-.search-decor:active {
   color: #FFF;
 }
 
@@ -296,16 +306,13 @@ body {
   height: 580px;
   border-radius: 5px;
 }
-.sub-box:hover {
-  border: 4px solid #FFFFFF;
-}
 
-.mar-24i {
-  margin: 24.91px 0 0 0;
+.mar-t-24i {
+  margin-top: 24.91px;
 }
 
 .mar-24 {
-  margin: 24px 0 0 0;
+  margin-top: 24px;
 }
 
 .mar-t-222i {
@@ -316,11 +323,11 @@ body {
   margin-top: 223px;
 }
 
-.p-price {
-  margin: 0 10px 0 0;
+.mar-r-10 {
+  margin-right: 10px;
 }
 
-.p-rub {
+.mar-t-7 {
   margin-top: 7px;
 }
 
@@ -331,7 +338,8 @@ body {
 .btn-arrange {
   width: 300px;
   height: 68px;
-  border: 4px solid #FFFFFF;
+  border: 4px solid;
+  border-color: #FFF;
   border-radius: 5px;
   background: transparent;
   color: #FFF;
@@ -382,7 +390,7 @@ body {
   width: 221px;
 }
 
-.mar-20 {
+.mar-t-20 {
   margin-top: 20px;
 }
 
@@ -497,6 +505,77 @@ body {
 
 .mar-t-82 {
   margin-top: 82px;
+}
+
+footer {
+  height: 486px;
+  width: 100%;
+  background: linear-gradient(89.75deg, #5328A1 32.83%, #95390C 81.56%);
+}
+
+.mar-t-80 {
+  margin-top: 80px;
+}
+
+.menu-1 {
+  width: 1020px;
+  height: 187px;
+  margin-left: 230px;
+}
+
+.text-footer {
+  color: #CACACA;
+  text-decoration: none;
+}
+
+.google {
+  width: 26px;
+  height: 17px;
+  background-image: url(../images/Google+.png);
+  background-size: cover;
+}
+
+.twit {
+  width: 22px;
+  height: 19px;
+  background-image: url(../images/Twitter.png);
+  background-size: cover;
+}
+
+.fb {
+  width: 12px;
+  height: 20px;
+  background-image: url(../images/Facebook.png);
+  background-size: cover;
+}
+
+.insta {
+  width: 19px;
+  height: 20px;
+  background-image: url(../images/Instagram.png);
+  background-size: cover;
+}
+
+.social-box {
+  width: 147px;
+  height: 71px;
+}
+
+.line-2 {
+  width: 100%;
+  height: 0px;
+  margin-top: 100px;
+  border: 1px solid;
+  border-color: #EEEEEE;
+}
+
+.mar-t-50 {
+  margin-top: 50px;
+}
+
+.menu-2 {
+  width: 534px;
+  margin-left: 230px;
 }
 
 /*# sourceMappingURL=style.css.map */
